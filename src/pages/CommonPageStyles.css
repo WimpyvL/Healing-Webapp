@@ -1,0 +1,36 @@
+/* Common styles for basic page layout */
+.common-page {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.main-content {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.content {
+  padding: 1rem;
+}

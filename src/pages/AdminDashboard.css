@@ -1,0 +1,197 @@
+/* General Styles */
+.admin-dashboard {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: width 0.3s ease;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: #adb5bd;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Content Area Styles */
+.content-area {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.content-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.75em;
+}
+
+/* Upload Form Styles */
+.upload-form .form-group {
+  margin-bottom: 20px;
+}
+
+.upload-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.upload-form textarea {
+  resize: vertical;
+}
+
+.upload-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.upload-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Content List Styles */
+.content-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content-list li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-list li:last-child {
+  border-bottom: none;
+}
+
+.content-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  color: #5cb85c;
+}
+
+.edit-button:hover {
+  background-color: rgba(92, 184, 92, 0.1);
+}
+
+.delete-button {
+  color: #d9534f;
+}
+
+.delete-button:hover {
+  background-color: rgba(217, 83, 79, 0.1);
+}
+
+/* Edit Form Styles (Hidden by default) */
+.edit-form {
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    align-items: center;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+  }
+
+  .sidebar ul {
+    text-align: center;
+  }
+
+  .sidebar li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  .sidebar a {
+    padding: 8px 12px;
+  }
+}

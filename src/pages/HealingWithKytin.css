@@ -1,0 +1,185 @@
+/* General Styles */
+.healing-with-kytin {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem; /* Add some padding around the content */
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 1rem; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.75rem; /* Reduced gap */
+  margin-top: 0.5rem; /* Add a little space above the links */
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 0.85rem; /* Slightly smaller font */
+}
+
+.nav-links li:hover {
+  color: #d4fc79;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  text-align: center;
+  padding: 2rem 1rem; /* Reduced padding */
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2rem; /* Slightly smaller font */
+  margin-bottom: 0.75rem;
+}
+
+/* About Section */
+.about {
+  padding: 1.5rem 1rem; /* Reduced padding */
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 1.75rem; /* Slightly smaller font */
+  margin-bottom: 0.75rem;
+}
+
+.about p {
+  max-width: 100%; /* Allow text to wrap */
+  margin: 0 auto;
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+/* Services Section */
+.services {
+  padding: 1.5rem 1rem; /* Reduced padding */
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.75rem; /* Slightly smaller font */
+  margin-bottom: 0.75rem;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Reduced gap */
+}
+
+.service-card {
+  background: #fff;
+  padding: 1rem; /* Reduced padding */
+  border-radius: 8px; /* Slightly less rounded */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Allow service cards to take full width */
+  text-align: center;
+}
+
+.service-card h3 {
+  font-size: 1.3rem; /* Slightly smaller font */
+  margin-bottom: 0.4rem;
+}
+
+.service-card p {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.service-card button {
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem; /* Reduced padding */
+  border-radius: 4px; /* Slightly less rounded */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.85rem; /* Slightly smaller font */
+}
+
+.service-card button:hover {
+  background: #2575fc;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 1.5rem 1rem; /* Reduced padding */
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 1.75rem; /* Slightly smaller font */
+  margin-bottom: 0.75rem;
+}
+
+.testimonial {
+  max-width: 100%; /* Allow text to wrap */
+  margin: 1rem auto;
+  font-style: italic;
+  color: #555;
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem; /* Reduced padding */
+  margin-top: 1.5rem; /* Reduced margin */
+  font-size: 0.8rem; /* Slightly smaller font */
+}
+
+/* Media Queries for even smaller screens */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Center items in the header */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center navigation links */
+  }
+
+  .nav-links li {
+    font-size: 0.8rem; /* Further reduce font size for very small screens */
+  }
+
+  .hero h2 {
+    font-size: 1.75rem; /* Further reduce font size for very small screens */
+  }
+
+  .about h2,
+  .services h2,
+  .testimonials h2 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+
+  .about p,
+  .service-card p,
+  .testimonial {
+    font-size: 0.85rem; /* Further reduce font size for very small screens */
+  }
+
+  .service-cards {
+    flex-direction: column; /* Stack service cards vertically */
+    align-items: center; /* Center service cards */
+  }
+}

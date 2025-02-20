@@ -1,0 +1,72 @@
+/* General Styles */
+.guided-meditations-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.guided-meditations-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.guided-meditations-header h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.guided-meditations-header p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.meditation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.meditation-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.meditation-item h4 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+.meditation-item p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.meditation-item audio {
+  width: 100%;
+}
+
+.no-meditations {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  background-color: #ddd;
+  margin: 1rem auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-style: italic;
+}

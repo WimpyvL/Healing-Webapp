@@ -1,0 +1,92 @@
+.categories-container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.category-title {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50; /* Dark blue-gray */
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Increased minmax */
+  gap: 30px;
+}
+
+.category-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px; /* Increased padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee; /* Light border */
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #3498db; /* Light blue */
+}
+
+.meditation-card {
+  border-radius: 12px;
+  padding: 20px; /* Increased padding */
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Light background */
+  transition: background-color 0.3s ease;
+}
+
+.meditation-card:hover {
+  background-color: #f0f0f0;
+}
+
+.meditation-card h4 {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  color: #2c3e50; /* Dark blue-gray */
+  transition: color 0.3s ease;
+}
+
+.meditation-card:hover h4 {
+  color: #3498db; /* Light blue */
+}
+
+.meditation-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Style for the audio player within the meditation card */
+.meditation-card .audio-player {
+  margin-top: 15px;
+}
+
+/* Like button styles */
+.like-button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #888;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.like-button:hover,
+.like-button.liked {
+  color: #e74c3c; /* Red heart */
+}
+
+.like-button:focus {
+  outline: none;
+}

@@ -1,0 +1,19 @@
+.audio-player {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.audio-player audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.audio-player p {
+  font-size: 1em;
+  color: #555;
+}
