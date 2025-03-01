@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Profile.css";
 import { useAuth } from "../components/AuthContext";
 
 function Profile() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [name, setName] = useState(user ? user.username : "User");
   const [email, setEmail] = useState(user ? user.email : "email@email.com");
   const [meditationGoal, setMeditationGoal] = useState("15 minutes daily");
@@ -52,6 +54,10 @@ function Profile() {
     alert("Settings updated successfully!");
   };
 
+  if (!user) {
+    return <div>Please log in to view your profile.</div>;
+  }
+
   return (
     <div className="profile-container">
       <header className="profile-header">
@@ -85,6 +91,19 @@ function Profile() {
           </div>
         </div>
       </section>
+
+      {user.isAdmin && (
+        <section className="profile-section admin-section">
+          <h3>Administrative Access</h3>
+          <p>You have administrative privileges.</p>
+          <button 
+            className="admin-dashboard-btn"
+            onClick={() => navigate('/admin')}
+          >
+            Go to Admin Dashboard
+          </button>
+        </section>
+      )}
 
       <section className="settings-section">
         <h3>Account Settings</h3>

@@ -6,6 +6,7 @@ function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+  const [isAdmin, setIsAdmin] = useState(false);
   const { register } = useAuth();
   const navigate = useNavigate();
 
@@ -15,7 +16,7 @@ function Register() {
     if (success) {
       // Store user in local storage
       let users = JSON.parse(localStorage.getItem('users') || '[]');
-      users.push({ username, password, email });
+      users.push({ username, password, email, isAdmin });
       localStorage.setItem('users', JSON.stringify(users));
 
       navigate('/profile');
@@ -46,6 +47,14 @@ function Register() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <label>
+          <input
+            type="checkbox"
+            checked={isAdmin}
+            onChange={(e) => setIsAdmin(e.target.checked)}
+          />
+          Register as Admin (Development Only)
+        </label>
         <button type="submit">Register</button>
       </form>
     </div>
